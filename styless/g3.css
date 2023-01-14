@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+
+}
+/*---------------------naver bar--------------------------------------*/
+.header{
+    height: 145vh;
+    background-color: rgba(255, 144, 14, 0.1);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+}
+nav > ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    
+}
+nav h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+/*------------------------------------header body--------------------------------*/
+.bannar-img img{
+    width: 60%;
+}
+.bannar-img{
+    display: flex;
+    justify-content: center;
+}
+.header-body{
+    text-align: center;
+    width: 60%;
+    margin: 90px auto 50px auto;
+}
+.header-body h1{
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.header-body p{
+    color: #727272;
+    font-size: 16px;
+    font-size: 400;
+    margin-bottom: 1rem;
+}
+.button-primary{
+    border: 0;
+    background-color: orange;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+/*--------------------------team-------------------------------------------------*/
+.sectoin-2{
+    width: 100%;
+    max-width: 1000px;
+    margin: 60px auto 169px auto;
+}
+.team-body > img{
+    width: 100%;
+}
+.team-body, .team-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.team-container{
+    align-items: center;
+}
+
+
+
+
+/*----------------featute------------------------------*/
+.feature-sectoin{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.feature-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 120px;
+}
+.feature-body{
+    flex: 1;
+}
+.feature-img{
+    flex: 1;
+}
+.feature-img > img{
+    width: 100%;
+}
+.featue-title-body{
+    color: #727272;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.featue-title-body h3{
+    color: black;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.featue-title-body, .container p{
+    font-size: 17px;
+
+}
+.container{
+    color: #727272;
+    padding: 25px 33px;
+    margin: 15px 0;
+    border-radius: 5px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+.container h6{
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}    
+
+
+
+
+
+
+
+
