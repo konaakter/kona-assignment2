@@ -6,7 +6,7 @@
 }
 /*---------------------naver bar--------------------------------------*/
 .header{
-    height: 145vh;
+    height: 100%;
     background-color: rgba(255, 144, 14, 0.1);
 }
 nav{
@@ -27,7 +27,7 @@ nav h2{
 }
 /*------------------------------------header body--------------------------------*/
 .bannar-img img{
-    width: 60%;
+    width: 90%;
 }
 .bannar-img{
     display: flex;
@@ -38,6 +38,12 @@ nav h2{
     width: 60%;
     margin: 90px auto 50px auto;
 }
+.header-container{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
+
 .header-body h1{
     font-size: 64px;
     font-weight: 700;
@@ -70,31 +76,42 @@ nav h2{
 .team-body, .team-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    gap: 24px;
+}
+.team-container{
+    gap: 50px;
 }
 .team-container{
     align-items: center;
 }
-
-
-
-
+.tream-body-title{
+    color: black;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 4%;
+}
+.gray-title{
+    color: #727272;
+}
+.orange-title{
+    color: #FF900E;
+}
+.team-body-2 p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 4%;
+}
 /*----------------featute------------------------------*/
 .feature-sectoin{
     width: 100%;
-    max-width: 1100px;
+    max-width: 1050px;
     margin: 0 auto;
 }
 .feature-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 120px;
-}
-.feature-body{
-    flex: 1;
-}
-.feature-img{
-    flex: 1;
+    column-gap: 150px;
 }
 .feature-img > img{
     width: 100%;
@@ -109,9 +126,11 @@ nav h2{
     font-size: 45px;
     font-weight: 600;
     margin-bottom: 24px;
+    border-left: 7px solid orange;
+    padding-left: 2%;
 }
 .featue-title-body, .container p{
-    font-size: 17px;
+    font-size: 12px;
 
 }
 .container{
@@ -125,10 +144,196 @@ nav h2{
 }
 .container h6{
     color: black;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
-}    
-
+}
+/*------------------------------------button--------------------------------------------------*/ 
+.button{
+    background-color: orange;
+    padding: 5% 7%;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    border: 0;
+    position: relative;
+    top: -100px;
+    right: 50px;
+    border-radius: 5px;
+}
+#button-small-part{
+    font-size: 16px;
+    font-weight: 400;
+}
+.some-fact-textbody h5{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 4% 0;
+}
+.some-fact-textbody p{
+    margin-bottom: 18%;
+    color: #727272;;
+    font-size: 16px;
+    font-weight: 400;
+}
+/*-------------------------award-----------------------------------------------*/
+.award-container-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.award-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 90px;
+}
+.award-body{
+    border: 1px solid #FF900E ;
+    padding: 25px 20px;
+    text-align: center;
+}
+.award-body h2{
+    margin: 10px 0;
+    color: #424242;
+    font-size: 30px;
+    font-weight: 700;
+}
+.award-body p{
+    color: #424242;
+    font-size: 15px;
+    font-weight: 400;
+}
+/*------------------------Our Sponspors-----------------------------------------------*/
+.Our-Sponspors{
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+.Our-Sponspors-body{
+    text-align: center;
+}
+.Our-Sponspors-body h2{
+    margin: 10% 0 2% 0;
+    font-weight: 700;
+    font-size: 45px;
+    font-weight: 600;
+}
+.Our-Sponspors-body p{
+    color:  #727272;;
+    font-size: 16px;
+    font-weight: 400;
+    width: 689px;
+    margin: 0 auto 5% auto;
+}
+.our-sponspors-img-con{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 60px;
+}
+.our-sponspors-img{
+    height: 50px;
+    width: 150px;
+    filter: grayscale(100%);
+}
+/*-----------------------------footter-----------------------------------------------------*/
+.last-part{
+    width: 100%;
+    max-width: 600px;
+    margin: 150px auto;
+    background: #FFF4E7;
+    border-radius: 8px;   
+    text-align: center;
+    padding: 50px 200px;
+}
+/*=======================================media quary============================================
+===============================================================================================*/
+@media only screen and (max-width:688px) {
+    nav ul{
+        position: relative;
+        top: 80px;
+        left: -90px;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    ul li{
+        margin: 10px 0;
+    }
+    nav h2{
+        position: relative;
+        top: 0;
+        left: 140px;
+        width: 100%;
+        font-weight: 500;   
+    }
+    .header-body h1{
+        font-size: 35px;
+        font-weight: 600;
+        padding: 15px 0 0 0;
+    }
+    .header-body p{
+        font-size: 10px;
+        font-size: 300;
+    }
+    /*-----------------------------tream-----------------------------*/
+    .team-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team-body > img{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .team-body-2, .Our-Sponspors-body h2{
+        text-align: center;
+    }
+    .team-body-2 h3, .featue-title-body h3{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    /*===========================================fauter==========================================*/
+    .feature-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .featue-title-body h3, .Our-Sponspors-body h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .featue-title-body h3{
+        border-left: 2px solid orange;
+    } 
+    .featue-title-body p{
+        padding: 5px;
+    }     
+    .button{
+        padding: 3% 5%;
+        font-size: 20px;
+        font-weight: 400;
+        position: relative;
+        top: -15px;
+        left: 10px;
+        border-radius: 5px;
+    }
+    #button-small-part{
+        font-size: 10px;
+        font-weight: 300;
+    }
+    .award-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .our-sponspors-img-con{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        padding-left: 15px;
+        text-align: center;
+    }
+    .Our-Sponspors-body p{
+        display: none;
+    }
+    .last-part{
+        display: none;
+    }
+      
+}
 
 
 
