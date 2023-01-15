@@ -12,8 +12,9 @@
 nav{
     display: flex;
     justify-content: space-around;
-    height: 80px;
-    align-items: center;
+    padding: 20px;
+    text-align: center;
+    
 }
 nav > ul{
     display: flex;
@@ -187,9 +188,13 @@ nav h2{
     gap: 90px;
 }
 .award-body{
-    border: 1px solid #FF900E ;
+    border: 1px solid #FF900E;
     padding: 25px 20px;
     text-align: center;
+}
+.award-body:hover{
+    background-color:  #FF900E;
+    transition: 0.7s;
 }
 .award-body h2{
     margin: 10px 0;
@@ -203,7 +208,7 @@ nav h2{
     font-weight: 400;
 }
 /*------------------------Our Sponspors-----------------------------------------------*/
-.Our-Sponspors{
+.Our-Sponspors, .extra-sec-body{
     width: 100%;
     max-width: 1050px;
     margin: 0 auto;
@@ -236,24 +241,59 @@ nav h2{
 }
 /*-----------------------------footter-----------------------------------------------------*/
 .last-part{
-    width: 100%;
-    max-width: 600px;
-    margin: 150px auto;
-    background: #FFF4E7;
-    border-radius: 8px;   
+    width: 80%;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    border-radius: 8px;
     text-align: center;
-    padding: 50px 200px;
 }
+.last-part-text{
+    font-size: 20px;
+    color: #424242;
+    margin: 0 auto;
+    padding: 40px;
+}
+footer{
+    margin: 150px 0px;
+}
+/*------------------------------------------------extra sectoin-----------------------------*/
+.extra-sectoi-title{
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.extra-sectoin{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    gap: 50px;
+}
+.exta-sectoin-container{
+    background-color: whitesmoke;
+    border-radius: 150px;
+    padding: 50px 50px;
+    row-gap: 40px;
+    text-align: center;
+}
+.exta-sectoin-container:hover{
+    background-color: #FF900E;
+    transition: 0.5s;
+}
+
+
 /*=======================================media quary============================================
 ===============================================================================================*/
 @media only screen and (max-width:688px) {
     nav{
         flex-direction: column;
-        row-gap: 30px;    
+        row-gap: 20px;    
     }
     ul{
         flex-direction: column;
-        row-gap: 30px;    
+        row-gap: 30px; 
+        align-items: center;   
     }
     nav h2{
         text-align: center;
@@ -270,7 +310,7 @@ nav h2{
         font-size: 300;
     }
     /*-----------------------------tream-----------------------------*/
-    .team-container{
+    .team-container, .team-body{
         grid-template-columns: repeat(1, 1fr);
     }
     .team-body > img{
@@ -317,17 +357,18 @@ nav h2{
     }
     .our-sponspors-img-con{
         grid-template-columns: repeat(1, 1fr);
-        gap: 10px;
+        row-gap: 30px;
         padding-left: 15px;
         text-align: center;
     }
     .Our-Sponspors-body p{
         display: none;
     }
-    .last-part{
-        display: none;
-    }
-      
+    .extra-sectoin{
+        flex-direction: column;
+        row-gap: 20px;  
+
+    }      
 }
 
 
